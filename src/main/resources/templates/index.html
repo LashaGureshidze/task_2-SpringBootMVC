@@ -1,0 +1,32 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <title>Home</title>
+</head>
+<body>
+
+<div layout:fragment="content">
+    <a th:href="@{/login}">login</a>
+    <a th:href="@{/logout}">logout</a>
+    <div>
+        <h1>Welcome to Demo SpringBoot APP</h1>
+    </div>
+    <div class="container">
+        <h3>What do you want to do?</h3>
+        <ul>
+            <li><a th:href="@{/api/about}">View About</a></li>
+        </ul>
+        <ul>
+            <li><a th:href="@{/api/info}">View Info</a></li>
+        </ul>
+        <ul>
+            <li><a th:href="@{/api/admin}">View Admin</a></li>
+        </ul>
+        <ul>
+            <li><a th:href="@{/api/users/blocked}">Blocked Users</a></li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>
